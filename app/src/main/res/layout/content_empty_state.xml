@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:tool="http://schemas.android.com/tools"
+        android:id="@+id/emptyStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:windowBackground"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:layout_marginBottom="@dimen/spacing_xlarge"
+            android:gravity="center"
+            android:orientation="vertical"
+            tool:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/emptyStateImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_large"
+                tool:ignore="ContentDescription"
+                tools:src="@drawable/img_undraw_server_down" />
+
+            <TextView
+                android:id="@+id/emptyStateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold"
+                tools:text="@string/whoops" />
+
+            <TextView
+                android:id="@+id/emptyStateDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_x_medium"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:gravity="center|top"
+                android:maxLines="5"
+                android:minLines="2"
+                android:textSize="@dimen/medium_text"
+                tools:text="@string/we_re_having_some_difficulties_please_try_again" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emptyStateAction"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_x_medium"
+                android:backgroundTint="?colorAccent"
+                android:gravity="center_horizontal|bottom"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:visibility="gone"
+                app:cornerRadius="@dimen/item_radius"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

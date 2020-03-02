@@ -1,0 +1,2 @@
+rootProject.name='RecyclerViewStatesHandler'
+include ':app'

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RecyclerViewStatesHandler</string>
+    <string name="whoops">Whoops!</string>
+    <string name="nothing_was_found">Nothing was found</string>
+    <string name="network_failure">Network failure</string>
+    <string name="we_re_having_some_difficulties_please_try_again">We\'re having some difficulties.\nPlease try again.</string>
+    <string name="please_check_your_internet_connection_and_try_again">Please check your connection and try again</string>
+    <string name="retry">Retry</string>
+    <string name="go_back">Go back</string>
+</resources>

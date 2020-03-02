@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--general spacing-->
+    <dimen name="spacing_medium" tools:keep="@dimen/spacing_medium">6dp</dimen>
+    <dimen name="spacing_x_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xm_large" tools:keep="@dimen/spacing_xm_large">40dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="medium_text">16sp</dimen>
+    <dimen name="item_radius">6dp</dimen>
+    <dimen name="large_text">20sp</dimen>
+    <dimen name="small_image_button" tools:keep="@dimen/small_image_button">30dp</dimen>
+</resources>
